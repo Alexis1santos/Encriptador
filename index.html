@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cifrado de Texto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="./assets/Logo.png" alt="Logo"> 
+    </header>
+    
+    <main>
+        <section class="entrada_controles">
+            <textarea id="text_AreaHTML" placeholder="Escribe tu texto aquí" rows="10" cols="30"></textarea>
+            <div class="Restricciones">
+                <p>Escribe en minúsculas y sin acentos</p>
+            </div>
+            <div class="botonera">
+                <button id="B_EncriptarHTML" class="btn_encriptar" onclick="encriptarTexto()">Cifrar</button>
+                <button id="B_desencriptarHTML" class="btn_desencriptar" onclick="desencriptarTexto()">Descifrar</button>
+            </div>
+        </section>
+
+        <section class="salida_mensaje">
+            <p class="Mensaje_Cifrado" id="mostrar_msjHTML"></p>
+            <img id="fotoHTML" class="img_personaje" src="./assets/Muñeco.png" alt="Imagen">
+            <p id="Ningun_msj" class="Mensaje_NoEncontrado">No se encontró ningún mensaje</p>
+            <p id="Ingresa_textoHTML" class="Mensaje_IngresaTexto">Escribe el texto que deseas cifrar o descifrar.</p>
+            <button id="B_Copiarhtml" class="btn_copiar" onclick="copiarTexto()">Copiar</button>
+        </section>
+    </main>
+
+    <script src="./encriptacion.js" defer></script>
+</body>
+</html>
+
